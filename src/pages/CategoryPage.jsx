@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './NewOrderPage.module.css';
+import styles from './ContactPage.module.css';
 
-const NewOrderPage = () => {
+const CategoryPage = () => {
   const categories = [
     {
       name: 'Herbs',
@@ -92,5 +92,5 @@ const NewOrderPage = () => {
   </div>
 );
 };
-export default NewOrderPage;
+export default CategoryPage;
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function OrderHistoryPage() {
+function ContactPage() {
   // State to manage user input for the contact form
   const [formData, setFormData] = useState({
     name: '',
@@ -134,7 +134,7 @@ function OrderHistoryPage() {
   );
 }
 
-export default OrderHistoryPage;
+export default ContactPage;
 
 
 

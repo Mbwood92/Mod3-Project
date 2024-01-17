@@ -1,5 +1,3 @@
-/* NavBar.module.css */
-
 .Navbar {
   background-color: teal;
   padding: 10px;
@@ -35,18 +33,17 @@ span[role='button'] {
   cursor: pointer;
 }
 
-/* Adjustments for cart container */
 .cartContainer {
   flex: 1;
   padding: 20px;
   border: 1px solid #ccc;
   position: fixed;
-  top: 60px; /* Adjust based on your NavBar height */
+  top: 60px; 
   right: 20px;
   background-color: white;
   z-index: 999;
   width: 300px;
   max-height: calc(100% - 60px);
   overflow-y: auto;
-  margin-top: 10px; /* Add margin to separate from NavBar */
+  margin-top: 10px; 
 }
