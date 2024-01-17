@@ -1,0 +1,52 @@
+/* NavBar.module.css */
+
+.Navbar {
+  background-color: teal;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: lightgreen;
+}
+
+span {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+span:hover {
+  cursor: default;
+}
+
+span[role='button'] {
+  cursor: pointer;
+}
+
+/* Adjustments for cart container */
+.cartContainer {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 60px; /* Adjust based on your NavBar height */
+  right: 20px;
+  background-color: white;
+  z-index: 999;
+  width: 300px;
+  max-height: calc(100% - 60px);
+  overflow-y: auto;
+  margin-top: 10px; /* Add margin to separate from NavBar */
+}

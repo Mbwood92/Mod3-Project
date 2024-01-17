@@ -13,8 +13,10 @@ import AuthPage from './AuthPage';
 import NewOrderPage from './NewOrderPage';
 import OrderHistoryPage from './OrderHistoryPage';
 
+
 // import components
 import NavBar from '../components/NavBar';
+import Review from '../components/Review.jsx'
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -34,6 +36,7 @@ function App() {
               <Route path='/orders/new' element={<NewOrderPage />}/>
               <Route path='/orders' element={<OrderHistoryPage />}/>
             </Routes>
+            
           </>
           :
           < AuthPage setUser={setUser} />
@@ -41,5 +44,7 @@ function App() {
     </>
   )
 }
+
+
 
 export default App

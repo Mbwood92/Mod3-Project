@@ -1,18 +1,20 @@
-/* CSS Custom Properties */
-:root {
-  --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+#root {
+  position: relative;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+#root::before {
+  content: 'Herbal Haven';
+  width: 50px; 
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px; 
+  font-family: cursive,fantasy;
+  font-size: 2rem; 
+  font-weight: bold;
+  color: navy; 
+
 }
+
 
 body {
   margin: 0;
@@ -21,10 +23,11 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: white; 
   padding: 2vmin;
   height: 100vh;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -69,7 +72,7 @@ code {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--tan-1);
+  background-color: white;
   color: var(--text-dark);
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
@@ -78,15 +81,10 @@ code {
   font-size: 2vmin;
 }
 
-.form-container {
-  padding: 3vmin;
-  background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
-  border-radius: 1vmin;
-}
+
 
 p.error-message {
-  color: var(--orange);
+  color: navy;
   text-align: center;
 }
 
@@ -114,19 +112,19 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color: white;
 }
 
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: navy;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: .1vmin solid white;
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
@@ -144,10 +142,25 @@ button.btn-xs {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  
 }
 
 button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
+}
+
+button, a.button {
+  margin: 1vmin;
+  padding: 1vmin;
+  color: white; /* Update the font color to white */
+  background-color: navy;
+  font-size: 2vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: .1vmin solid white;
+  border-radius: .5vmin;
+  outline: none;
+  cursor: pointer;
 }

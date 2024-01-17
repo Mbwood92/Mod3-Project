@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import * as userService from '../utilities/users-services'
+import styles from './Navbar.module.css';
 
 function NavBar(props) {
   // Add in functionality to log out
@@ -12,16 +13,27 @@ function NavBar(props) {
   }
 
   return (
-    <nav>
-        <Link to='/orders'>Order History</Link>
+    <div className={styles.Navbar}>
+      <nav>
+        <Link to='/orders'>Contact</Link>
         &nbsp; | &nbsp;
-        <Link to='/orders/new'>New Orders</Link>
+        <Link to='/orders/new'>Category</Link>
         &nbsp; | &nbsp;
-        <span>Welcome, {props.user.name}</span>
+        {props.user && (
+          <span>Welcome, {props.user.name}</span>
+        )}
         &nbsp; | &nbsp;
-        <Link to="" onClick={handleLogOut}>Log Out</Link>
-    </nav>
-  )
+        <span
+          role="button"
+          tabIndex={0}
+          onClick={handleLogOut}
+          onKeyDown={(e) => e.key === 'Enter' && handleLogOut()}
+        >
+          Log Out
+        </span>
+      </nav>
+    </div>
+  );
 }
 
 export default NavBar
