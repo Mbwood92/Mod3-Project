@@ -35,7 +35,7 @@ Future Enhancements: Able to see and purchase products without logging into acco
 
 
 Deploy Link:
-https://cheerful-capybara-3f4d62.netlify.app/
+https://endearing-jelly-b79628.netlify.app/
 
 
 
